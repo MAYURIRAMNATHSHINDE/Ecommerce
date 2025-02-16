@@ -22,12 +22,12 @@ app.get('/', (req, res) => {
 
 //success
 app.get('/success', (req, res) => {
-    res.sendFile(path.join(__dirname, 'https://ecommerce-6ecq.onrender.com/paymentCancel.html'));
+    res.sendFile(path.join(__dirname, 'success.html'));
 });
 
 //cancel
 app.get('/cancel', (req, res) => {
-    res.sendFile(path.join(__dirname, 'https://ecommerce-6ecq.onrender.com/paymentCancel.html'));
+    res.sendFile(path.join(__dirname, 'paymentCancel.html'));
 });
 
 

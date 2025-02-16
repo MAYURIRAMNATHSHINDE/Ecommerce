@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
        // console.log("Sending cartItems:", JSON.parse(cartItems));
 
         try {
-            const response = await fetch('http://localhost:8080/stripe-checkout', { 
+            const response = await fetch("https://ecommerce-6ecq.onrender.com/stripe-checkout", { 
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ items: parsedItems })

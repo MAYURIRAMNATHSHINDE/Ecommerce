@@ -14,7 +14,8 @@ app.use(express.json())
 app.use(cors());
 
 PORT=process.env.PORT || 8080;
-app.use('/frontend', express.static(path.join(__dirname, 'frontend')));
+//app.use('/frontend', express.static(path.join(__dirname, 'frontend')))
+app.use(express.static(__dirname));
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
